@@ -17,9 +17,9 @@ public class Training {
                 case 2:
                     Casting.casting();
                     break;
-                case 3 :
-                    Date.date() ;
-                    break ;
+                case 3:
+                    Date.date();
+                    break;
                 case 4:
                     System.out.print("Entrez votre nombre : ");
                     NombrePair.nombrePair(in.nextLine());
@@ -31,12 +31,28 @@ public class Training {
                 case 6:
                     System.out.print("Entrez un entier : ");
                     NombrePremier.nombrePremier(in.nextLine());
-                    break ;
-                case 7 :
+                    break;
+                case 7:
                     System.out.print("Entrez un entier : ");
                     NombreParfait.nombreParfait(in.nextLine());
+                    break;
+                case 8:
+                    System.out.print("Chemin pour la creation du fichier : ");
+                    File.create(in.nextLine());
+                    break;
+                case 9:
+                    System.out.print("Chemin vers le fichier de lecture : ");
+                    File.read(in.nextLine());
+                    break;
+                case 10:
+                    System.out.print("Chemin vers le fichier d'ecriture : ");
+                    File.write(in.nextLine(), in);
+                    break;
+                case 11 :
+                    System.out.print("Entrez votre mot : ");
+                    Doublons.motDoublon(in.nextLine());
                     break ;
             }
-        } while (choix != 8);
+        } while (choix != 13);
     }
 }
