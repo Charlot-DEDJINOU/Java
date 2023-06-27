@@ -48,10 +48,14 @@ public class Training {
                     System.out.print("Chemin vers le fichier d'ecriture : ");
                     File.write(in.nextLine(), in);
                     break;
-                case 11 :
+                case 11:
                     System.out.print("Entrez votre mot : ");
                     Doublons.motDoublon(in.nextLine());
-                    break ;
+                    break;
+                case 12:
+                    System.out.print("Entrez votre mot : ");
+                    Palindrome.palindrome(in.nextLine());
+                    break;
             }
         } while (choix != 13);
     }
