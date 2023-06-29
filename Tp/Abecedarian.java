@@ -9,9 +9,8 @@ public class Abecedarian {
 
         for (int i = 1; i < word.length(); i++) {
 
-            if (word.charAt(i) < word.charAt(i - 1)) {
+            if (word.charAt(i) < word.charAt(i - 1)) 
                 return false;
-            }
         }
 
         return true;

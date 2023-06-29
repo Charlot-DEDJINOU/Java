@@ -13,7 +13,7 @@ public class Casting {
                 numberInt = Integer.parseInt(number);
                 return numberInt;
             } catch (NumberFormatException e) {
-                System.out.print("Prière entrer un entier : ");
+                System.out.print("Veuillez entrer un entier : ");
                 number = scanner.nextLine();
             }
         }
